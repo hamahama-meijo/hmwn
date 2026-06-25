@@ -13,13 +13,13 @@ input_image = sys.argv[1]
 output_image = sys.argv[2]
 
 # 画像の読み込み
-ing = Image.open(input_image)
+img = Image.open(input_image)
 
 # 画像の左右反転
-ing_flip = ing.transpose(Image.FLIP_LEFT_RIGHT)
+img_flip = img.transpose(Image.FLIP_LEFT_RIGHT)
 
 # 画像の保存
-ing_flip.save(output_image)
+img_flip.save(output_image)
 ```
 ## 3.使い方
 ### 3.1.実行例
